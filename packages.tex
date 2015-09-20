@@ -1,0 +1,48 @@
+\usepackage{ifdraft}
+
+\usepackage{fontspec}
+\usepackage{xltxtra} 
+\usepackage{polyglossia}   %% загружает пакет многоязыковой вёрстки
+
+\setdefaultlanguage{ukrainian}  %% устанавливает главный язык документа
+\setotherlanguage{english} %% объявляет второй язык документа
+\setotherlanguage{russian} %% третий язык документа - для библиографии
+\defaultfontfeatures{Ligatures=TeX,Mapping=tex-text}
+
+%% Виставлення шрифтів документу
+\newfontfamily{\cyrillicfont}{Times New Roman}
+\newfontfamily{\cyrillicfontsf}{Arial}
+\newfontfamily{\cyrillicfonttt}[Scale=0.95]{Courier New}
+
+\usepackage{extsizes}
+\usepackage{titlesec}
+
+
+\usepackage{setspace}%[nodisplayskipstretch]
+	\onehalfspacing
+	\frenchspacing
+	
+\usepackage{graphicx} 	% для вставки картинок
+
+
+\usepackage{amsfonts,amsmath,amsthm} % математические дополнения от АМС
+\usepackage{unicode-math}
+\usepackage{indentfirst} % отделять первую строку раздела абзацным отступом тоже
+\usepackage[usenames,dvipsnames]{color} % названия цветов
+\usepackage{ulem} % подчеркивания
+\usepackage{tocloft}
+\usepackage{import}
+\usepackage{lastpage} % знаходить номер останньої сторінки за \pageref*{LastPage}~с.
+\usepackage{etoolbox}
+\usepackage[title,titletoc]{appendix}
+\usepackage{pdfpages}
+
+
+%пакети для таблиць
+\usepackage{array}
+\usepackage{tabulary}
+\usepackage{tabularx}
+\usepackage{float} 		% пакет для [H]-положення фігур
+\usepackage{rotating}	% пакет для перевертання блоків
+\usepackage{makecell}
+\usepackage{multirow} % улучшенное форматирование таблиц
